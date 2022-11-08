@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --colorBody: #e2dad3;
+    --colorVerde: #769970;
+    --colorAzul: #004d5d;
+    --colorRosa: #feccc8;
+    --colorGris: #a6a294;
+}
+body{
+    background-color: var(--colorBody);
+    min-height: 100vh;
+    margin: 0;
+}
+
+/*inicio de cabecera*/
+
+header{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 12px;
+    background-color: var(--colorVerde);
+}
+.buttonImagen, .buttontext, .buttonlight{
+    border-radius: 15px;
+    border: 3px var(--colorAzul) solid;
+    background-color: var(--colorRosa);
+    padding: 8px;
+    cursor: pointer;
+}
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/*fin de cabecera
+inicio de main*/
+
+main{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-flow: column;
+}
+img{
+    height: 350px;
+}
+.download{
+    border-radius: 15px;
+    border: 3px var(--colorGris) ridge;
+    background-color: var(--colorVerde);
+    padding: 6px;
+    cursor: pointer; 
+}
+
+/*fin de main
+inicio de aside*/
+aside{
+    position: fixed;
+    left: 0px;
+    top: 80px;
+    right: 1050px;
+}
+.buttonAside{
+    background-color: lightsalmon;
+}
+.sectionImg, .sectionTest{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column;
+    background-color: var(--colorRosa);
+    padding-left: 15px;
+}
+input, label{
+    color:black;
+}
+
+
